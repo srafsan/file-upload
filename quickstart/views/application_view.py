@@ -28,7 +28,8 @@ class ApplicationView(APIView):
         files = self.request.FILES
 
         for file in files.values():
-            url = upload_file(file=file)
+            file_url = upload_file(file=file)
+
 
 
         return None
